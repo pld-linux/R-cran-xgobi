@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Interface to the XGobi and XGvis programs for graphical data analysis.
 
-%description
+%description -l pl
 Interfejsy do programów XGobi i XGvis do graficznej analizy danych.
 
 %prep
