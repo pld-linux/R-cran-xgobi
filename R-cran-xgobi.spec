@@ -1,7 +1,7 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		modulename	xgobi
 Summary:	Interface to the XGobi and XGvis programs for graphical data analysis
-Summary(pl):	Interfejsy do programów XGobi i XGvis do graficznej analizy danych
+Summary(pl.UTF-8):   Interfejsy do programÃ³w XGobi i XGvis do graficznej analizy danych
 Name:		R-cran-%{modulename}
 Version:	1.2r12
 Release:	2
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Interface to the XGobi and XGvis programs for graphical data analysis.
 
-%description -l pl
-Interfejsy do programów XGobi i XGvis do graficznej analizy danych.
+%description -l pl.UTF-8
+Interfejsy do programÃ³w XGobi i XGvis do graficznej analizy danych.
 
 %prep
 %setup -q -c
