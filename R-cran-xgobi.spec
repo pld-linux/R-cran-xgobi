@@ -9,8 +9,8 @@ License:	Copyright (C) by Bellcore, non-profit use and redistribution permitted 
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
 # Source0-md5:	3edae689c69c12ef71df1ee269c1b1b8
-BuildRequires:	R-base >= 2.4.0
-Requires(post,postun):	R-base >= 2.4.0
+BuildRequires:	R >= 2.8.1
+Requires(post,postun):	R >= 2.8.1
 Requires(post,postun):	perl-base
 Requires(post,postun):	textutils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
