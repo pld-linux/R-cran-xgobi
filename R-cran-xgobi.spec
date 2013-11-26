@@ -4,7 +4,7 @@ Summary:	Interface to the XGobi and XGvis programs for graphical data analysis
 Summary(pl.UTF-8):	Interfejsy do programów XGobi i XGvis do graficznej analizy danych
 Name:		R-cran-%{modulename}
 Version:	1.2r15
-Release:	1
+Release:	2
 License:	Copyright (C) by Bellcore, non-profit use and redistribution permitted (see COPYING for details)
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
@@ -29,6 +29,7 @@ R CMD build %{modulename}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_libdir}/R/library/
 R CMD INSTALL %{modulename} --library=$RPM_BUILD_ROOT%{_libdir}/R/library/
 
 %clean
@@ -46,5 +47,5 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc %{modulename}/{DESCRIPTION,README,COPYING,ChangeLog}
+%doc %{modulename}/{DESCRIPTION,README,ChangeLog}
 %{_libdir}/R/library/%{modulename}
