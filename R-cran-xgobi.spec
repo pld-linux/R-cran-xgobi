@@ -1,13 +1,14 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		modulename	xgobi
+%undefine	_debugsource_packages
 Summary:	Interface to the XGobi and XGvis programs for graphical data analysis
 Summary(pl.UTF-8):	Interfejsy do programów XGobi i XGvis do graficznej analizy danych
 Name:		R-cran-%{modulename}
 Version:	1.2r15
-Release:	3
+Release:	4
 License:	Copyright (C) by Bellcore, non-profit use and redistribution permitted (see COPYING for details)
 Group:		Applications/Math
-Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
+Source0:	https://cran.r-project.org/src/contrib/%{modulename}_%{fversion}.tar.gz
 # Source0-md5:	f940376554daab0cc17a0c0530bc9dfa
 BuildRequires:	R >= 2.8.1
 Requires(post,postun):	R >= 2.8.1
